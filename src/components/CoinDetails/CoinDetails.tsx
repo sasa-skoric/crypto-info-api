@@ -1,4 +1,4 @@
-import DOMPurify from "dompurify";
+import DOMPurify from "isomorphic-dompurify";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -7,14 +7,7 @@ import "./CoinDetails.css";
 const CoinDetails = () => {
   const dynamicUrl = useParams();
 
-  const [coinDescription, setCoinDescription] = useState({
-    image: { small: "" },
-    name: "",
-    market_cap_rank: 0,
-    symbol: "",
-    market_data: {},
-    description: {},
-  });
+  const [coinDescription, setCoinDescription] = useState<any>({});
 
   const url = `https://api.coingecko.com/api/v3/coins/${dynamicUrl.coinId}`;
 
