@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import CoinListItem from "../CoinListItem/CoinListItem";
-import CoinDetails from "../CoinDetails/CoinDetails";
 import "./CoinList.css";
 
 const CoinList = ({ coinListApiData }: any) => {
