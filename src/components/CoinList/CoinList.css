@@ -1,0 +1,39 @@
+.container {
+  max-width: 1140px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #27272b;
+  box-shadow: 0px 0px 12px #18191b;
+  border-radius: 0.5rem;
+  margin: 2rem 1rem;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+}
+
+.coin_name {
+  margin-left: -4rem;
+}
+
+.server_error {
+  color: rgb(231, 231, 231);
+  text-align: center;
+  text-shadow: 1px 1px 15px black;
+}
+
+@media screen and (max-width: 720px) {
+  .hide_mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .container {
+    font-size: small;
+  }
+}
