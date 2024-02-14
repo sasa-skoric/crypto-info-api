@@ -18,11 +18,7 @@ const CoinList = ({ coinListApiData }: any) => {
 
         {coinListApiData ? (
           coinListApiData.map((item: any) => (
-            <Link
-              to={`/crypto-info-api/coin/${item.id}`}
-              key={item.id}
-              element={<CoinDetails />}
-            >
+            <Link to={`/crypto-info-api/coin/${item.id}`} key={item.id}>
               <CoinListItem coinItemData={item} key={item.id} />
             </Link>
           ))
